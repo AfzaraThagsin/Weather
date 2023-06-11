@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Unbounded&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Unbounded",cursive;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  overflow-x: hidden;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bg
+{
+  margin-top: 45px;
+  margin-left: 500px;
+  margin-bottom: 15px;
+  width: 800px;
+  min-height: 50vh;
+  background: url(weather-forecast-background.jpg) no-repeat center/cover;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  color:black;
+}
+.input{
+  background-color: rgba(255,255,255,0.75);
+
+}
+.group{
+  display: flex;
+  gap:10px;
+  align-items: center;
+  margin:1rem 0;
+
+}
+.city
+
+{
+  margin-top: 5rem;
+  
+}
+.city,.temp{
+  font-optical-sizing: 4;
+  font-size: 3rem;
+  font-style:inherit;
+ 
+}
+.box_container{
+  margin-top: 0rem;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap:2px;
+}
+.box{
+  padding: 1rem;
+
+  width: 200px;
+  text-align: center;
+ 
+  flex-direction: column;
+  gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+@media only screen and (max-width:60px){
+  .bg{
+    padding: 2rem 0;
   }
-  to {
-    transform: rotate(360deg);
+  .box_container{
+    flex-direction:row;
+  }
+  .box,.input
+  {
+      width: 50vw;
   }
 }
